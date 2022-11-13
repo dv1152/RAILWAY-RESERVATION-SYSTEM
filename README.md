@@ -1,5 +1,3 @@
-//Railway-Reservation-System
-
 #include <cstdlib>
 #include <iostream>
 #include <fstream>
@@ -121,7 +119,7 @@ class reser
 		cout<<"1.Military\n2.Senior citizen\n";
 		cout<<"3.Children below 5 yrs\n4.None\n";
 		std::cin>>con;
-		cout<<"����END OF GETTING DETAILS����\n";
+		cout<<"    END OF GETTING DETAILS    \n";
 	}
 	void displayresdet()
 	{
@@ -166,12 +164,12 @@ class canc
         std::cin >> pnr;
         std::cout << "Date of cancellation:";
         std::cin >> d >> m >> y;
-        std::cout << "���..END OF GETTING DETAILS���..\n";
+        std::cout << "   ..END OF GETTING DETAILS   ..\n";
     }
     void displaycancdet()
     {
-        std::cout << "��������������.\n";
-        std::cout << "��������������.\n";
+        std::cout << "              .\n";
+        std::cout << "              .\n";
         std::cout << "Pnr no:" << pnr;
         std::cout << "\nTrain no:" << tno;
         std::cout << "\nTrain name:";
@@ -192,7 +190,7 @@ class canc
         std::cout << "\nDate of cancellation:" << d << "-" << m << "-" << y;
         std::cout << "\nYou can collect:" << amr << "rs" << endl;
         std::cout << "*****************************************\n";
-        std::cout << "���END OF CANCELLATION����.\n";
+        std::cout << "   END OF CANCELLATION    .\n";
         std::cout << "*****************************************\n";
     }
 };
@@ -371,7 +369,7 @@ void res()
                 }
                 else
                 {
-                    cout << "**********Sorry req seats not available********\n";
+                    cout << "*********Sorry req seats not available*******\n";
                 }
             }
             else if (strcmp(b.clas, s) == 0)
@@ -410,7 +408,7 @@ void res()
                 }
                 else
                 {
-                    cout << "********Sorry req no of seats not available*******\n";
+                    cout << "*******Sorry req no of seats not available******\n";
                 }
             }
         }
@@ -459,7 +457,7 @@ void cancell()
     f1.open("t.txt",ios::in|ios::out|ios::binary);
     f2.open("p.txt",ios::in|ios::out|ios::binary);
     f3.open("cn.txt",ios::in|ios::out|ios::binary);
-    cout<<"**********CANCELLATION MENU*********\n";
+    cout<<"*********CANCELLATION MENU********\n";
     c.getcancdet();
     while(f2.read((char *) & b,sizeof(b)))
     {
@@ -574,7 +572,7 @@ void can()
     int ch;
     do
     {
-        cout << "�����..CANCELLATION MENU���\n";
+        cout << "     ..CANCELLATION MENU   \n";
         cout << "1.Cancel\n2.Return to the main menu\n";
         cout << "Enter your choice:";
         cin >> ch;
